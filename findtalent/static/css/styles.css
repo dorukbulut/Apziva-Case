@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body{
+
+    background: url("../images/bg.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+    
+}
+
+h1,h5{
+    color : white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    
+}
+
+
+h1 {
+    font-size : 3rem;
+    
+}
+
+
+.maintitle{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mainpage { 
+    margin: auto;
+    width: 50%;
+    padding-top: 10%;
+
+     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+
+
+    display : flex;
+    flex-direction: column;
+    gap : 100px;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+    gap : 4vw;
+}
+
+input {
+    width: 35vw;
+    height: 45px;
+    border : none;
+    border-radius: 7px;
+    padding : 2%;
+}
+
+
+#one{
+    height: 45px;
+    width: 150px;
+    background-color: #172334;
+    color : white;
+    border: 0px;
+    border-radius: 10px;
+    outline: none;
+    transition-duration: 0.4s;
+}
+
+#one:hover {
+    color : black;
+    background-color: white;
+    border : none;
+}
+
+#two:focus {
+    outline : none;
+}
+
+
+
+
+
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" >
+    <title>Find Talent</title>
+</head>
+<body>
+    
+    <div class="mainpage">
+
+        <div class="maintitle">
+            <h1>Welcome to <em>Find Talent !</em></h1>
+            <h5>
+                Find Talent,gives you the opportunity to find the best talents around the world !
+            </h5>
+        </div>
+        
+
+        <form class="search-bar" method="POST" action="/results">
+            
+            <input id="two" name="search" type="text">
+            <button class=" "id="one" type="submit">Search</button>
+        </form>
+    </div>
+    <script src="{%static 'js/script.js'%}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
