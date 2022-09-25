@@ -11,7 +11,7 @@ import requests
 import aiohttp
 import asyncio
 
-TOKEN = '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'
+TOKEN = 'YOUR GİTHUB APİ AUTH TOKEN'
 headers = {'Authorization': 'token ' + TOKEN}
 
 # Async api calls in order to get faster results
